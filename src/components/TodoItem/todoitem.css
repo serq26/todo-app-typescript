@@ -1,0 +1,85 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.done{
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+}
+
+.done p{
+  text-decoration: line-through;
+}
+
+p {
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #08bb67d5;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+input[type="checkbox"]::before {
+  content: "\2714";
+  font-size: 1.5em;
+  color: #fff;
+  transform: translateY(200px);
+  opacity: 0;
+  transition:  all .5s ease-in-out;
+}
+
+input[type="checkbox"]:checked::before{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+input[type="checkbox"]:focus{
+    outline: none;
+}
+
+
+.item button{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.item button.remove{
+    color:rgb(233, 22, 22)
+}
+
+.item button svg{
+    height: 30px;
+    width: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.item button svg:hover{
+    transform: scale(1.15);
+}
+
+.item label{
+  display: flex;
+}

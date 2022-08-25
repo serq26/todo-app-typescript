@@ -1,0 +1,21 @@
+.todos {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 40%;
+}
+
+li {
+  border-radius: 10px;
+  background: rgb(224, 223, 223);
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px){
+  .todos{
+    width: 90%
+  }
+}

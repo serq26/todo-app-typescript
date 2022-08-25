@@ -1,0 +1,46 @@
+.add-todo {
+  padding: 30px;
+  position: relative;
+  width: max-content;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+input[type="text"] {
+  height: 40px;
+  border-radius: 10px;
+  outline: 0;
+  border: 1px solid #ccc;
+  padding-left: 20px;
+  font-weight: 500;
+  width: 100%;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: 1px solid #aaa;
+}
+
+.add-todo button {
+  border: 1px solid green;
+  outline: 0;
+  padding: 14px 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: green;
+  border-radius: 14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  margin: auto;
+  height: max-content;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-todo button:hover {
+  background-color: darkgreen;
+}
